@@ -1,5 +1,3 @@
-"use strict";
-
 import * as box2d from "@akashic-extension/akashic-box2d";
 
 // 2次元ベクトル
