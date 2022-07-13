@@ -177,7 +177,7 @@ function createBox(scene: g.Scene, parameter: BoxParameterObject): box2d.EBody {
 	// 表示用の矩形と衝突判定を結び付けて返す
 	const box = physics.createBody(rect, parameter.physics.body, parameter.physics.fixture);
 
-	box.entity.onUpdate.add(function() {
+	box.entity.onUpdate.add(() => {
 		// 画面外に出たら自分を削除
 		if (g.game.height + 100 < box.entity.y) {
 			removeBox(box);
