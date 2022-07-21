@@ -1,0 +1,29 @@
+{
+  "name": "hit-break",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "DWANGO Co., Ltd.",
+  "scripts": {
+    "build": "rimraf ./script && tsc && akashic-cli-scan asset script",
+	"update": "akashic-cli-scan asset && akashic-cli-scan globalScripts",
+	"start": "akashic-sandbox .",
+	"lint": "eslint src/**/*.ts --fix"
+  },
+  "dependencies": {
+    "@akashic-extension/akashic-box2d": "~3.1.0"
+  },
+  "devDependencies": {
+    "@akashic/akashic-cli-scan": "~0.15.39",
+    "@akashic/akashic-engine": "~3.4.3",
+    "@akashic/eslint-config": "^1.1.0",
+    "@akashic/akashic-sandbox": "^0.17.50",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "rimraf": "3.0.2",
+    "typescript": "4.7.4"
+  }
+}
